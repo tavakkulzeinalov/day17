@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:regular,500,700" rel="stylesheet" />
+	<link rel="stylesheet" href="./null.css">
+	<link rel="stylesheet" href="./style.css">
+	<script defer src="script.js"></script>
+</head>
+
+<body>
+	<h1>База ветеринарной клиники</h1>
+	<div class="content">
+		<div class="content__form">
+			<form action="" class="form">
+				<h2>Добавление животного в базу данных</h2>
+				<label for="animal-type">Выберите тип животного</label>
+				<select name="type" id="animal-type" class="form__select" required>
+					<option value="">Тип животного</option>
+					<option value="cat">Коты</option>
+					<option value="dog">Собаки</option>
+					<option value="bird">Птицы</option>
+					<option value="rodent">Грызуны</option>
+					<option value="cattle">Крупный рогатый скот</option>
+				</select>
+				<label for="name">Кличка животного</label>
+				<input type="text" name="name" id="animal-name" required>
+
+				<div class="checkbox">
+					<input type="checkbox" name="isHomeless" id="is-homeless">
+					<label for="is-homeless">Бездомное животное</label>
+				</div>
+
+
+				<label for="age">Введите возраст животного (лет)</label>
+				<input type="number" min="0" name="age" id="age" required>
+
+				<!-- Дополнительные/раскрывающиеся инпуты -->
+				<div class="hidden input-group breed">
+					<label for="breed">Порода</label>
+					<input type="text" name="breed" id="breed">
+				</div>
+
+				<div class="hidden input-group size">
+					<label for="size">Размер (см)</label>
+					<input type="number" min="0" name="size" id="size">
+				</div>
+
+				<div class="hidden input-group kind">
+					<label for="kind">Вид</label>
+					<input type="text" name="kind" id="kind">
+				</div>
+
+				<div class="hidden input-group color">
+					<label for="color">Расцветка</label>
+					<input type="text" name="color" id="color">
+				</div>
+
+				<div class="checkbox hidden input-group is-milk">
+					<input type="checkbox" name="isGivesMilk" id="is-milk">
+					<label for="is-milk">Дает молоко</label>
+				</div>
+
+				<label for="description">Опишите симптомы, введите другую важную информацию о животном</label>
+				<textarea name="description" id="description" cols="20" rows="5" required></textarea>
+
+				<input type="submit" value="Добавить" id="submit">
+			</form>
+		</div>
+		<div class="content__table">
+			<h2>База данных животных</h2>
+			
+		</div>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,11 @@
+{
+  "folders": [
+	{
+		"path": "."
+	}
+],
+  "settings": {
+    "nuxt.isNuxtApp": false,
+    "liveServer.settings.multiRootWorkspaceName": "day17"
+  }
+}
